@@ -1,0 +1,1816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog</class>
+ <widget class="QDialog" name="dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>577</width>
+    <height>824</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>تسجيل بصمة معلم</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons_rc/icons.qrc">
+    <normaloff>:/icons_qrc/fingerprint-scan.png</normaloff>:/icons_qrc/fingerprint-scan.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255, 255, 255)</string>
+  </property>
+  <widget class="QPushButton" name="btnSaveTeacherTemplates">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>760</y>
+     <width>113</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+   </property>
+   <property name="text">
+    <string>حفــظ</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/true.png</normaloff>:/icons_qrc/true.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>35</width>
+     <height>35</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>70</y>
+     <width>141</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 255, 255)</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="icons_rc/icons.qrc">:/icons_qrc/fingerprint-scan.gif</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+   <property name="openExternalLinks">
+    <bool>false</bool>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::NoTextInteraction</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblUserName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>531</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 14pt &quot;Motken K Sina&quot;;
+background-color:none</string>
+   </property>
+   <property name="text">
+    <string>تسجيل بصمة معلم</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancelRejesteringFingers">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>760</y>
+     <width>120</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Motken K Sina</family>
+     <pointsize>12</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+   </property>
+   <property name="text">
+    <string>إلغــــاء</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/exclamation-48.ico</normaloff>:/icons_qrc/exclamation-48.ico</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtTeacherDevicePassword">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>210</y>
+     <width>231</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>      يجب أن تكون مابين الارقام من 0 ....9</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_60">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>180</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Motken K Sina</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:none</string>
+   </property>
+   <property name="text">
+    <string>كلمة المرور</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>541</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 10pt &quot;Motken K Sina&quot;;</string>
+   </property>
+   <property name="title">
+    <string>قم بأختيار الاصبع المراد تسجيلها ثم الضغط على زر بدء التسجيل</string>
+   </property>
+   <widget class="QPushButton" name="btnRejesterFinger">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>360</y>
+      <width>113</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>160</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+    </property>
+    <property name="text">
+     <string>تسجيل</string>
+    </property>
+    <property name="icon">
+     <iconset resource="icons_rc/icons.qrc">
+      <normaloff>:/icons_qrc/fingerprintChecked.png</normaloff>:/icons_qrc/fingerprintChecked.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRightHandFinger8">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>130</y>
+      <width>30</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   background-color:rgb(208, 153, 131);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>468</x>
+      <y>110</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons_rc/icons.qrc">:/icons_qrc/true.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRightHandFinger6">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>130</y>
+      <width>30</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   background-color:rgb(208, 153, 131);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRightHandFinger5">
+    <property name="geometry">
+     <rect>
+      <x>299</x>
+      <y>160</y>
+      <width>41</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   background-color:rgb(208, 153, 131);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>305</x>
+      <y>112</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons_rc/icons.qrc">:/icons_qrc/true.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>391</x>
+      <y>63</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons_rc/icons.qrc">:/icons_qrc/true.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>351</x>
+      <y>82</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons_rc/icons.qrc">:/icons_qrc/true.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRightHandFinger9">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>150</y>
+      <width>21</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   background-color:rgb(208, 153, 131);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRightHandFinger7">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>110</y>
+      <width>30</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   background-color:rgb(208, 153, 131);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>431</x>
+      <y>83</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons_rc/icons.qrc">:/icons_qrc/true.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRightHand">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>230</y>
+      <width>161</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+      background-color:rgb(208, 153, 131);
+    border: none;
+    border-radius:35%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>اليد اليمنى  </string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHand">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>230</y>
+      <width>161</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+      background-color:rgb(208, 153, 131);
+    border: none;
+    border-radius:35%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>اليد اليسرى </string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>231</x>
+      <y>110</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons_rc/icons.qrc">:/icons_qrc/true.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger4">
+    <property name="geometry">
+     <rect>
+      <x>221</x>
+      <y>160</y>
+      <width>41</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   background-color:rgb(208, 153, 131);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger1">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>130</y>
+      <width>31</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   background-color:rgb(208, 153, 131);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>143</x>
+      <y>70</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons_rc/icons.qrc">:/icons_qrc/true.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_1">
+    <property name="geometry">
+     <rect>
+      <x>101</x>
+      <y>82</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons_rc/icons.qrc">:/icons_qrc/true.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger3">
+    <property name="geometry">
+     <rect>
+      <x>181</x>
+      <y>130</y>
+      <width>30</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   background-color:rgb(208, 153, 131);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger2">
+    <property name="geometry">
+     <rect>
+      <x>141</x>
+      <y>110</y>
+      <width>30</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   background-color:rgb(208, 153, 131);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_0">
+    <property name="geometry">
+     <rect>
+      <x>64</x>
+      <y>106</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons_rc/icons.qrc">:/icons_qrc/true.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>181</x>
+      <y>87</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="icons_rc/icons.qrc">:/icons_qrc/true.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger0">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>150</y>
+      <width>21</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   background-color:rgb(208, 153, 131);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDeleteFingersData">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>360</y>
+      <width>113</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>165</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+    </property>
+    <property name="text">
+     <string>حـــذف </string>
+    </property>
+    <property name="icon">
+     <iconset resource="icons_rc/icons.qrc">
+      <normaloff>:/icons_qrc/delete-svgrepo-com.svg</normaloff>:/icons_qrc/delete-svgrepo-com.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger1_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>120</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger1_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>100</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger1_5">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>185</x>
+      <y>120</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger1_6">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>148</y>
+      <width>33</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger1_13">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>303</x>
+      <y>150</y>
+      <width>33</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger1_14">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>354</x>
+      <y>120</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger1_15">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>394</x>
+      <y>100</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLeftHandFinger1_16">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>434</x>
+      <y>120</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    font: 75 14pt &quot;Motken K Sina&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_61">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>472</x>
+      <y>148</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Motken K Sina</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   background-color:rgb(236, 236, 236);
+ border-radius: 10%;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbFinger0">
+    <property name="geometry">
+     <rect>
+      <x>64</x>
+      <y>80</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbFinger1">
+    <property name="geometry">
+     <rect>
+      <x>101</x>
+      <y>70</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbFinger2">
+    <property name="geometry">
+     <rect>
+      <x>143</x>
+      <y>50</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbFinger3">
+    <property name="geometry">
+     <rect>
+      <x>181</x>
+      <y>70</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbFinger4">
+    <property name="geometry">
+     <rect>
+      <x>231</x>
+      <y>90</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbFinger5">
+    <property name="geometry">
+     <rect>
+      <x>305</x>
+      <y>90</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbFinger6">
+    <property name="geometry">
+     <rect>
+      <x>351</x>
+      <y>60</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbFinger7">
+    <property name="geometry">
+     <rect>
+      <x>391</x>
+      <y>40</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbFinger8">
+    <property name="geometry">
+     <rect>
+      <x>431</x>
+      <y>60</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbFinger9">
+    <property name="geometry">
+     <rect>
+      <x>468</x>
+      <y>80</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:none</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>btnRejesterFinger</zorder>
+   <zorder>btnRightHandFinger8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>btnRightHandFinger6</zorder>
+   <zorder>btnRightHandFinger5</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_6</zorder>
+   <zorder>btnRightHandFinger9</zorder>
+   <zorder>btnRightHandFinger7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>btnRightHand</zorder>
+   <zorder>btnLeftHand</zorder>
+   <zorder>label_4</zorder>
+   <zorder>btnLeftHandFinger4</zorder>
+   <zorder>btnLeftHandFinger1</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_1</zorder>
+   <zorder>btnLeftHandFinger3</zorder>
+   <zorder>btnLeftHandFinger2</zorder>
+   <zorder>label_0</zorder>
+   <zorder>label_3</zorder>
+   <zorder>btnDeleteFingersData</zorder>
+   <zorder>btnLeftHandFinger1_2</zorder>
+   <zorder>btnLeftHandFinger1_3</zorder>
+   <zorder>btnLeftHandFinger0</zorder>
+   <zorder>btnLeftHandFinger1_5</zorder>
+   <zorder>btnLeftHandFinger1_6</zorder>
+   <zorder>btnLeftHandFinger1_13</zorder>
+   <zorder>btnLeftHandFinger1_14</zorder>
+   <zorder>btnLeftHandFinger1_15</zorder>
+   <zorder>btnLeftHandFinger1_16</zorder>
+   <zorder>label_61</zorder>
+   <zorder>cbFinger0</zorder>
+   <zorder>cbFinger1</zorder>
+   <zorder>cbFinger2</zorder>
+   <zorder>cbFinger3</zorder>
+   <zorder>cbFinger4</zorder>
+   <zorder>cbFinger5</zorder>
+   <zorder>cbFinger6</zorder>
+   <zorder>cbFinger7</zorder>
+   <zorder>cbFinger8</zorder>
+   <zorder>cbFinger9</zorder>
+  </widget>
+  <widget class="QLineEdit" name="txtTeacherDevicePassword_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>-190</y>
+     <width>231</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>      يجب أن تكون مابين الارقام من 0 ....9</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons_rc/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

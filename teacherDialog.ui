@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1029</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1029</width>
+    <height>596</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1029</width>
+    <height>596</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>80</y>
+     <width>381</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="txtTeacherFName">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhDigitsOnly|Qt::ImhPreferNumbers</set>
+        </property>
+        <property name="placeholderText">
+         <string>الاسم الثلاثي</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>الاسم </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="txtTeacherLName">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhDigitsOnly|Qt::ImhPreferNumbers</set>
+        </property>
+        <property name="placeholderText">
+         <string> اللقب فقط</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>اللقب</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QComboBox" name="combTeatcherGendar">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	
+	border: 1px solid #5b586e;
+
+</string>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToContents</enum>
+        </property>
+        <item>
+         <property name="text">
+          <string>ذكر</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>أنثى</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_15">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>الجنس</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QComboBox" name="combTeatcherCitye">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+</string>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToContents</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_16">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>المحافظة</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QDateEdit" name="dateTeacherDOB">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>270</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(25, 21, 59);
+color:rgb(255, 255, 255);
+font: 12pt &quot;PT Bold Heading&quot;;</string>
+        </property>
+        <property name="locale">
+         <locale language="English" country="UnitedStates"/>
+        </property>
+        <property name="currentSection">
+         <enum>QDateTimeEdit::DaySection</enum>
+        </property>
+        <property name="displayFormat">
+         <string/>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+        <property name="timeSpec">
+         <enum>Qt::LocalTime</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>70</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>تاريخ الميلاد</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QLineEdit" name="txtTeacherPhone">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhDigitsOnly|Qt::ImhPreferNumbers</set>
+        </property>
+        <property name="placeholderText">
+         <string>يجب ان يتكون من تسعة ارقام</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>الهــاتف</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <widget class="QLineEdit" name="txtTeacherQualification">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhDigitsOnly|Qt::ImhPreferNumbers</set>
+        </property>
+        <property name="placeholderText">
+         <string>دبلوم / بك  </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>المؤهـل</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>80</y>
+     <width>451</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="5,5,5,5,5,5">
+    <property name="spacing">
+     <number>20</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_11">
+      <item>
+       <widget class="QDateEdit" name="dateTeacherDOQualification">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>400</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(25, 21, 59);
+color:rgb(255, 255, 255);
+font: 12pt &quot;PT Bold Heading&quot;;</string>
+        </property>
+        <property name="locale">
+         <locale language="English" country="UnitedStates"/>
+        </property>
+        <property name="currentSection">
+         <enum>QDateTimeEdit::DaySection</enum>
+        </property>
+        <property name="displayFormat">
+         <string/>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+        <property name="timeSpec">
+         <enum>Qt::LocalTime</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>70</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>ت/ التخرج</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="80,20">
+      <item>
+       <widget class="QComboBox" name="combShiftsType">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>400</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	
+	border: 1px solid #5b586e;
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>70</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>الوردية</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_12">
+      <item>
+       <widget class="QLineEdit" name="txtTeacherMajor">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>400</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhDigitsOnly|Qt::ImhPreferNumbers</set>
+        </property>
+        <property name="placeholderText">
+         <string> التخصص الدراسي </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>الـتـخــصـص</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLineEdit" name="txtTeacherExceperianceYears">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>400</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhDigitsOnly|Qt::ImhPreferNumbers</set>
+        </property>
+        <property name="placeholderText">
+         <string>قم بأدخال قيمة رقمية</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>سنوات الخبرة</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="80,20">
+      <item>
+       <widget class="QComboBox" name="ComboTeacherTask">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>400</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	
+	border: 1px solid #5b586e;
+
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>مدير</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>مدرس</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>وكيل</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>مدير النظام</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>70</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>المهمــة</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QComboBox" name="ComboTeacherStatus">
+        <property name="minimumSize">
+         <size>
+          <width>323</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>400</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	
+	border: 1px solid #5b586e;
+
+</string>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+        </property>
+        <item>
+         <property name="text">
+          <string>مفعل</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>موقف</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_14">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>70</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+        </property>
+        <property name="text">
+         <string>الحالة</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btnCancelAddingTeacher">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>530</y>
+     <width>103</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>160</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Motken K Sina</family>
+     <pointsize>12</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+   </property>
+   <property name="text">
+    <string>الغــاء</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/exclamation-48.ico</normaloff>:/icons_qrc/exclamation-48.ico</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>22</width>
+     <height>22</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSaveTeacher">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>530</y>
+     <width>103</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+   </property>
+   <property name="text">
+    <string>حفــظ</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/true.png</normaloff>:/icons_qrc/true.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>35</width>
+     <height>35</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="labAddDivece">
+   <property name="geometry">
+    <rect>
+     <x>-2</x>
+     <y>-2</y>
+     <width>1061</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(4, 0, 62);
+color:rgb(255, 255, 255);
+font: 15pt &quot;Motken K Sina&quot;;</string>
+   </property>
+   <property name="text">
+    <string>إضافة معلم جديد</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnCloseDialog">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>10</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:qlineargradient(spread:pad, x1:0.506975, y1:0.432, x2:0.99, y2:0.437227, stop:0.900498 rgba(4, 0, 62, 255), stop:1 rgba(255, 255, 255, 255));
+color:rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/multiply.png</normaloff>:/icons_qrc/multiply.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTeacherID">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>555</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>id</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labAddTeacher">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>550</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>id</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons_rc/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

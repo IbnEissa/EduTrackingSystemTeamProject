@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>451</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>247</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+   </property>
+   <property name="text">
+    <string>رقم هاتف الاب</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancelAddingStudent">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>450</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+   </property>
+   <property name="text">
+    <string>إلغــــــاء</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/exclamation-48.ico</normaloff>:/icons_qrc/exclamation-48.ico</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="labAddStudent">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>451</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(4, 0, 62);
+color:rgb(255, 255, 255);
+font: 15pt &quot;Motken K Sina&quot;;</string>
+   </property>
+   <property name="text">
+    <string>إضافة طالب جديد</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSaveStudent">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>450</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+   </property>
+   <property name="text">
+    <string>حفـــظ</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/true.png</normaloff>:/icons_qrc/true.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>35</width>
+     <height>35</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>297</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+   </property>
+   <property name="text">
+    <string>تاريخ الميلاد</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateStudentDOB">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>297</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(25, 21, 59);
+color:rgb(255, 255, 255);
+font: 12pt &quot;PT Bold Heading&quot;;</string>
+   </property>
+   <property name="locale">
+    <locale language="Arabic" country="Yemen"/>
+   </property>
+   <property name="currentSection">
+    <enum>QDateTimeEdit::DaySection</enum>
+   </property>
+   <property name="displayFormat">
+    <string>d/M/yyyy</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::LocalTime</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>150</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+   </property>
+   <property name="text">
+    <string>اللقب</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>90</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+   </property>
+   <property name="text">
+    <string>الاسم الثلاثي</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtStudentLName">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>150</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtStudentFName">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>90</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtStudentParentPhone">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>247</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhMultiLine</set>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combClasses">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>347</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	
+	border: 1px solid #5b586e;
+
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>347</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+   </property>
+   <property name="text">
+    <string>الفصل</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>205</y>
+     <width>50</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+   </property>
+   <property name="text">
+    <string>الجنس</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combStudentGender">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>200</y>
+     <width>261</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>300</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	
+	border: 1px solid #5b586e;
+
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>ذكر</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>أنثى</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QToolButton" name="btnCloseDialog">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>10</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:qlineargradient(spread:pad, x1:0.506975, y1:0.432, x2:0.99, y2:0.437227, stop:0.900498 rgba(4, 0, 62, 255), stop:1 rgba(255, 255, 255, 255));
+color:rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/multiply.png</normaloff>:/icons_qrc/multiply.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtStudentFName</tabstop>
+  <tabstop>txtStudentLName</tabstop>
+  <tabstop>txtStudentParentPhone</tabstop>
+  <tabstop>dateStudentDOB</tabstop>
+  <tabstop>labAddStudent</tabstop>
+  <tabstop>btnCancelAddingStudent</tabstop>
+  <tabstop>btnSaveStudent</tabstop>
+  <tabstop>combClasses</tabstop>
+ </tabstops>
+ <resources>
+  <include location="icons_rc/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>733</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>التهيئة</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="labAddDivece">
+       <property name="styleSheet">
+        <string notr="true">
+background-color:qlineargradient(spread:pad, x1:0.506975, y1:0.432, x2:0.99, y2:0.437227, stop:0.900498 rgba(4, 0, 62, 255), stop:1 rgba(255, 255, 255, 255));
+color:rgb(255, 255, 255);
+ font: 75 15pt &quot;Motken K Sina&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>بيانات جهاز البصمة </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="22,40,10,18">
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>100</width>
+             <height>50</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="txtDeviceName">
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="cursor" stdset="0">
+            <cursorShape>IBeamCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTextEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhDigitsOnly|Qt::ImhMultiLine|Qt::ImhPreferNumbers</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+           </property>
+           <property name="text">
+            <string>اسم الجهاز</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>30</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="txtIPNumber">
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="cursor" stdset="0">
+            <cursorShape>IBeamCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTextEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhPreferNumbers</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+           </property>
+           <property name="text">
+            <string>عنوان IP</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="22,40,10,19">
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="txtPortNumber">
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="cursor" stdset="0">
+            <cursorShape>IBeamCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTextEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhDigitsOnly|Qt::ImhMultiLine|Qt::ImhPreferNumbers</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font: 75 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0);
+background-color:none;</string>
+           </property>
+           <property name="text">
+            <string>رقم المنفذ</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QPushButton" name="btnCancelInitDevice">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+           </property>
+           <property name="text">
+            <string>إلغاء</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icons_rc/icons.qrc">
+             <normaloff>:/icons_qrc/exclamation-48.ico</normaloff>:/icons_qrc/exclamation-48.ico</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnSaveDevice">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+           </property>
+           <property name="text">
+            <string>التالـــي</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icons_rc/icons.qrc">
+             <normaloff>:/icons_qrc/arrowLeft.png</normaloff>:/icons_qrc/arrowLeft.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnSkippingDevice">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+           </property>
+           <property name="text">
+            <string>تخطي</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icons_rc/icons.qrc">
+             <normaloff>:/icons_qrc/arrow-left.png</normaloff>:/icons_qrc/arrow-left.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnSaveInitDevice">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+           </property>
+           <property name="text">
+            <string>حفظ</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icons_rc/icons.qrc">
+             <normaloff>:/icons_qrc/true.png</normaloff>:/icons_qrc/true.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>txtDeviceName</tabstop>
+  <tabstop>txtIPNumber</tabstop>
+  <tabstop>txtPortNumber</tabstop>
+  <tabstop>labAddDivece</tabstop>
+  <tabstop>btnCancelInitDevice</tabstop>
+  <tabstop>btnSaveDevice</tabstop>
+  <tabstop>btnSkippingDevice</tabstop>
+  <tabstop>btnSaveInitDevice</tabstop>
+ </tabstops>
+ <resources>
+  <include location="icons_rc/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

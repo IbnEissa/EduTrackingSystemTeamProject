@@ -1,0 +1,217 @@
+<RCC>
+  <qresource prefix="icons_qrc">
+    <file>_ (1).jpg</file>
+    <file>_.jpg</file>
+    <file>__init__.py</file>
+    <file>7.png</file>
+    <file>38-person-1.svg</file>
+    <file>15576a3c2ad9502.jpg</file>
+    <file>526622.jpg</file>
+    <file>add.ico</file>
+    <file>add1.png</file>
+    <file>add-50.svg</file>
+    <file>addNew.png</file>
+    <file>addOneNew.jpg</file>
+    <file>add-to-28.svg</file>
+    <file>add-to-svgrepo-com.svg</file>
+    <file>addUser.svg</file>
+    <file>archive.png</file>
+    <file>arrow-80-48.ico</file>
+    <file>arrow-146-48.ico</file>
+    <file>arrow-208-48.ico</file>
+    <file>arrow-left (1).png</file>
+    <file>arrowLeft.png</file>
+    <file>arrow-left.png</file>
+    <file>arrow-next.png</file>
+    <file>arrow-right.png</file>
+    <file>Asset 1.png</file>
+    <file>Asset 3.png</file>
+    <file>assigned-person-edit.svg</file>
+    <file>at-home.png</file>
+    <file>attendance.png</file>
+    <file>attendence_count.png</file>
+    <file>broom.png</file>
+    <file>businessman-24.ico</file>
+    <file>calendar-svgrepo-com.svg</file>
+    <file>cancel.png</file>
+    <file>certificates-25.svg</file>
+    <file>checkbox_checked.ico</file>
+    <file>checkbox_unchecked.ico</file>
+    <file>checked.png</file>
+    <file>check-mark-2-48.ico</file>
+    <file>check-mark-3-48.ico</file>
+    <file>check-out.png</file>
+    <file>circle-xmark.png</file>
+    <file>close.png</file>
+    <file>consult-3.svg</file>
+    <file>copy-128.gif</file>
+    <file>cross-script.png</file>
+    <file>database-management.png</file>
+    <file>data-configuratio-checkedn-48.ico</file>
+    <file>data-configuration-128.gif</file>
+    <file>delete.png</file>
+    <file>delete3.svg</file>
+    <file>delete-131.svg</file>
+    <file>delete-circular.png</file>
+    <file>delete-svgrepo-com.svg</file>
+    <file>edit.png</file>
+    <file>edit2.png</file>
+    <file>edit3.svg</file>
+    <file>edit-property-48.ico</file>
+    <file>edit-svgrepo-com.svg</file>
+    <file>education.jpg</file>
+    <file>EduTrackingSystemLogo.png</file>
+    <file>exclamation-48.ico</file>
+    <file>fingerPrint.jpg</file>
+    <file>fingerprintChecked.png</file>
+    <file>fingerprint-scan.gif</file>
+    <file>fingerprint-scan.mp4</file>
+    <file>fingerprint-scan.png</file>
+    <file>FirstMenuM.png</file>
+    <file>Flag_of_the_Yemeni_Navy.jpg</file>
+    <file>generic-text-48.ico</file>
+    <file>generic-text-48-checked.ico</file>
+    <file>guardar+save+icon-1320191245245380651.svg</file>
+    <file>home.png</file>
+    <file>home-300.svg</file>
+    <file>home-page-svgrepo-com.svg</file>
+    <file>home-vector.png</file>
+    <file>hqdefault.jpg</file>
+    <file>hqdefault.webp</file>
+    <file>icons.py</file>
+    <file>icons.qrc</file>
+    <file>images (1).jpg</file>
+    <file>images (1).png</file>
+    <file>images (2).jpg</file>
+    <file>images (3).jpg</file>
+    <file>images (4).jpg</file>
+    <file>images.jpg</file>
+    <file>images.png</file>
+    <file>istockphoto-1227391537-1024x1024.jpg</file>
+    <file>key-4-48-checked.ico</file>
+    <file>key-4-128.gif</file>
+    <file>key-6-128.ico</file>
+    <file>key-24.ico</file>
+    <file>key-48.ico</file>
+    <file>left-arrow-direction-navigation-svgrepo-com.svg</file>
+    <file>list-of-student-reports-school-management-program-edu-step-up.jpg</file>
+    <file>loadData.png</file>
+    <file>login-64.ico</file>
+    <file>log-out.svg</file>
+    <file>logout-48.ico</file>
+    <file>management-of-school-control-edu-step-up.webp</file>
+    <file>management-of-student-accounts-in-schools.webp</file>
+    <file>managing-personnel-reports-program-edu-step-up.webp</file>
+    <file>map-arrow-left-svgrepo-com.svg</file>
+    <file>map-arrow-right-svgrepo-com.svg</file>
+    <file>minisize.png</file>
+    <file>ministry.png</file>
+    <file>more-svgrepo-com.svg</file>
+    <file>multiply.png</file>
+    <file>my-33.svg</file>
+    <file>newData.png</file>
+    <file>newHome.svg</file>
+    <file>newusers.jpg</file>
+    <file>nLogo.png</file>
+    <file>notice-306.svg</file>
+    <file>ns.jpg</file>
+    <file>permission.png</file>
+    <file>permissions.svg</file>
+    <file>person.png</file>
+    <file>personnel-management-program-edu-step-up.webp</file>
+    <file>photoAdd.png</file>
+    <file>photoDel.png</file>
+    <file>picAdd.png</file>
+    <file>picDel.png</file>
+    <file>play.png</file>
+    <file>png-clipart-computer-icons-bank-statement-account-others-miscellaneous-text.png</file>
+    <file>pressure-128 (1).gif</file>
+    <file>pressure-128.gif</file>
+    <file>profile.png</file>
+    <file>programs-smart-school-management-Program-Edu-Step-Up.htm</file>
+    <file>qt-license.txt</file>
+    <file>question-mark-7-48.ico</file>
+    <file>recurring-appointment-48.ico</file>
+    <file>redo-5-128.gif</file>
+    <file>refresh.png</file>
+    <file>refresh-button.png</file>
+    <file>reload-vector.png</file>
+    <file>remarks-19.svg</file>
+    <file>remarks-24.svg</file>
+    <file>remove-circular.png</file>
+    <file>reports.png</file>
+    <file>reports_icon.png</file>
+    <file>save.svg</file>
+    <file>save-128.gif</file>
+    <file>schedule.png</file>
+    <file>school-accounts-management-program (1).webp</file>
+    <file>school-accounts-management-program.webp</file>
+    <file>search-7-128.gif</file>
+    <file>security-183.svg</file>
+    <file>settings.png</file>
+    <file>settings.svg</file>
+    <file>settings-vector.png</file>
+    <file>set-up-644.svg</file>
+    <file>shifts.png</file>
+    <file>show-property-128.gif</file>
+    <file>shutdown.png</file>
+    <file>stop-button.png</file>
+    <file>student-affairs-school-management-program-edu-step-up.webp</file>
+    <file>students.png</file>
+    <file>system_users.png</file>
+    <file>teachers.png</file>
+    <file>teachers_reports.png</file>
+    <file>ticket-information-svgrepo-com.svg</file>
+    <file>touch-id.png</file>
+    <file>true.png</file>
+    <file>unlock-vector.png</file>
+    <file>update-vector.png</file>
+    <file>user-48.ico</file>
+    <file>userProfile.png</file>
+    <file>users.png</file>
+    <file>users_accounts.jpg</file>
+    <file>users_Details.svg</file>
+    <file>users3.svg</file>
+    <file>user-settings-12.svg</file>
+    <file>vector-school-icon-png_309691.jpg</file>
+    <file>verified.png</file>
+    <file>view.png</file>
+    <file>weekly.png</file>
+    <file>worldtourism-7886.jpg</file>
+    <file>x-mark-2-128.gif</file>
+    <file>x-mark-3-48.ico</file>
+    <file>x-mark-48.ico</file>
+    <file>Yemeni_Navy 3d .jpg</file>
+    <file>Yemeni_Navy 3d.svg</file>
+    <file>yemenLogo.png</file>
+    <file>ZKTeco_Gray-White.png</file>
+    <file>ارشيف.svg</file>
+    <file>اضافة.svg</file>
+    <file>الاعدادات.svg</file>
+    <file>الرئيسية.svg</file>
+    <file>بحث.svg</file>
+    <file>برنامج-إدارة-المدارس-الخاصة-Pioneers-E-School.webp</file>
+    <file>تحرير.svg</file>
+    <file>تحليل نظام االمدرسة.jpg</file>
+    <file>تصدير.svg</file>
+    <file>تعديل.svg</file>
+    <file>تنزيل (1).jpg</file>
+    <file>تنزيل (2).jpg</file>
+    <file>تنزيل (3).jpg</file>
+    <file>تنزيل (5).jpg</file>
+    <file>تنزيل (6).jpg</file>
+    <file>تنزيل (7).jpg</file>
+    <file>تنزيل.jpg</file>
+    <file>تنزيل.png</file>
+    <file>جدول.svg</file>
+    <file>حذف (2).svg</file>
+    <file>حذف.svg</file>
+    <file>حركة موظف.svg</file>
+    <file>حفظ.svg</file>
+    <file>طالب.svg</file>
+    <file>لدخال.svg</file>
+    <file>‏‏لقطة الشاشة (6).png</file>
+    <file>معلم.svg</file>
+    <file>مهام-الوزارة.htm</file>
+  </qresource>
+</RCC>

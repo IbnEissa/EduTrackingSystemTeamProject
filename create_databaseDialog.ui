@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>456</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="labAddFathers">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-9</y>
+     <width>461</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color:qlineargradient(spread:pad, x1:0.506975, y1:0.432, x2:0.99, y2:0.437227, stop:0.900498 rgba(4, 0, 62, 255), stop:1 rgba(255, 255, 255, 255));
+color:rgb(255, 255, 255);
+ font: 75 15pt &quot;Motken K Sina&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>تهيئة قاعدة البيانات</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combDataBaseInitialize">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>142</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	
+	border: 1px solid #5b586e;
+
+</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>142</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;Motken K Sina&quot;;</string>
+   </property>
+   <property name="text">
+    <string> قاعدة البيانات</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnConnectoinDataBase">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>250</y>
+     <width>103</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+   </property>
+   <property name="text">
+    <string>إتصال</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/checked.png</normaloff>:/icons_qrc/checked.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCreateDataBase">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>250</y>
+     <width>103</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+   </property>
+   <property name="text">
+    <string>إنشاء</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/checked.png</normaloff>:/icons_qrc/checked.png</iconset>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkShowDatabaseExists">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>102</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>الأتصال بقاعدة جاهزة</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancelConnectDatabase">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>249</y>
+     <width>103</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+   </property>
+   <property name="text">
+    <string>إلغــــــاء</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/exclamation-48.ico</normaloff>:/icons_qrc/exclamation-48.ico</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons_rc/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>deviceDialog</class>
+ <widget class="QDialog" name="deviceDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>515</width>
+    <height>347</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>إضافة جهاز جديد</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <widget class="QPushButton" name="btnSaveDevice">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>290</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ForbiddenCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+   </property>
+   <property name="text">
+    <string>حفـــــظ</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/true.png</normaloff>:/icons_qrc/true.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancelAddingDevice">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ForbiddenCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+
+QPushButton {
+background-color:rgb(50, 65, 75);
+ 
+ color:rgb(255, 255, 255);
+font: 75 12pt &quot;Motken K Sina&quot;;
+
+  border-radius:10px;
+	padding: 10px 5;
+	
+}
+
+QPushButton:hover {
+background-color:rgb(191, 194, 181);
+      	 color:rgb(0, 0, 0);
+		font: 75 10pt &quot;Motken K Sina&quot;;
+
+       
+
+}</string>
+   </property>
+   <property name="text">
+    <string>إلغــــــاء</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons_rc/icons.qrc">
+     <normaloff>:/icons_qrc/exclamation-48.ico</normaloff>:/icons_qrc/exclamation-48.ico</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>374</x>
+     <y>120</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>عنوان الايبي :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>384</x>
+     <y>190</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;Motken K Sina&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>رقم المنفذ :</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtIPAddress">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>110</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly|Qt::ImhMultiLine|Qt::ImhPreferNumbers</set>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtPortNumber">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>180</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhPreferNumbers</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>521</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(4, 0, 62);
+color:rgb(255, 255, 255);
+font: 15pt &quot;Motken K Sina&quot;;</string>
+   </property>
+   <property name="text">
+    <string>إضافة جهاز بصمة جديد</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtIPAddress</tabstop>
+  <tabstop>txtPortNumber</tabstop>
+  <tabstop>btnSaveDevice</tabstop>
+  <tabstop>btnCancelAddingDevice</tabstop>
+  <tabstop>pushButton_8</tabstop>
+ </tabstops>
+ <resources>
+  <include location="icons_rc/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

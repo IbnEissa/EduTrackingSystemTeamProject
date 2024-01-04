@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>964</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>التهيئة</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="85">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0">
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(223, 221, 220);
+color:rgb(0, 0, 0);
+
+font: 18pt &quot;Mohammad Annoktah&quot;;</string>
+         </property>
+         <property name="text">
+          <string>بيانات االمعلمين</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnAddNewTeacher">
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(4, 0, 62);
+color:rgb(255, 255, 255);
+font: 15pt &quot;Mohammad Annoktah&quot;;</string>
+           </property>
+           <property name="text">
+            <string>جديد</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>icons/add-to-28.svg</normaloff>icons/add-to-28.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="2" column="0">
+          <widget class="QPushButton" name="btnSaveTeachers">
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(4, 0, 62);
+color:rgb(255, 255, 255);
+font: 15pt &quot;Mohammad Annoktah&quot;;</string>
+           </property>
+           <property name="text">
+            <string>التالـــي</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>icons/arrowLeft.png</normaloff>icons/arrowLeft.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="listTeachers">
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableWidget {
+    background-color: #FFFFFF;
+    alternate-background-color:rgb(0, 0, 0);
+    font: 9pt &quot;PT Bold Heading&quot;;
+    font-weight: bold;
+ color:rgb(0, 0, 0)
+}
+
+QHeaderView::section {
+    background-color:rgb(25, 21, 59);
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
+	font: 10pt &quot;PT Bold Heading&quot;;
+	color:rgb(255, 255, 255)
+}
+
+QTableWidget::item:selected {
+    background-color:rgb(25, 21, 65);
+    color:rgb(255, 255, 255);
+}</string>
+           </property>
+           <column>
+            <property name="text">
+             <string>الرقم </string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>الاسم الاول</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>الاسم الثاني</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>الاسم الثالث</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>اللقب</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>البصمة</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>العمليات</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="btnSkippingTeachers">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(4, 0, 62);
+color:rgb(255, 255, 255);
+font: 15pt &quot;Mohammad Annoktah&quot;;</string>
+           </property>
+           <property name="text">
+            <string>تخطي</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>icons/arrow-left.png</normaloff>icons/arrow-left.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

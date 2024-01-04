@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>deviceDialog</class>
+ <widget class="QDialog" name="deviceDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>515</width>
+    <height>392</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>إضافة جهاز جديد</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <widget class="QPushButton" name="btnSaveDevice">
+   <property name="geometry">
+    <rect>
+     <x>302</x>
+     <y>320</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(4, 0, 62);
+color:rgb(255, 255, 255);
+font: 15pt &quot;PT Bold Heading&quot;;</string>
+   </property>
+   <property name="text">
+    <string>حفـــــظ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancelAddingDevice">
+   <property name="geometry">
+    <rect>
+     <x>122</x>
+     <y>320</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 85, 0);
+color:rgb(255, 255, 255);
+font: 15pt &quot;PT Bold Heading&quot;;</string>
+   </property>
+   <property name="text">
+    <string>إلغــــــاء</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>374</x>
+     <y>120</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;</string>
+   </property>
+   <property name="text">
+    <string>عنوان الايبي</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>384</x>
+     <y>190</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;</string>
+   </property>
+   <property name="text">
+    <string>رقم المنفذ</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtIPAddress">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>110</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly|Qt::ImhMultiLine|Qt::ImhPreferNumbers</set>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtPortNumber">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>180</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhPreferNumbers</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>471</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(223, 221, 220);
+color:rgb(0, 0, 0);
+
+font: 18pt &quot;Mohammad Annoktah&quot;;</string>
+   </property>
+   <property name="text">
+    <string>إضافة جهاز بصمة جديد</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtIPAddress</tabstop>
+  <tabstop>txtPortNumber</tabstop>
+  <tabstop>btnSaveDevice</tabstop>
+  <tabstop>btnCancelAddingDevice</tabstop>
+  <tabstop>pushButton_8</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

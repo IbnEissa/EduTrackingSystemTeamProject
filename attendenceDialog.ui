@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>512</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>330</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>رقم الماكينة</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>90</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>الاسم</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>140</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>رقم البصمة </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>511</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(223, 221, 220);
+color:rgb(0, 0, 0);
+
+font: 18pt &quot;Mohammad Annoktah&quot;;
+background-color:rgb(223, 221, 220);
+color:rgb(0, 0, 0);
+
+font: 18pt &quot;Mohammad Annoktah&quot;;
+background-color:qlineargradient(spread:pad, x1:0.506975, y1:0.432, x2:0.99, y2:0.437227, stop:0.900498 rgba(4, 0, 62, 255), stop:1 rgba(255, 255, 255, 255));
+color:rgb(255, 255, 255);
+font: 15pt &quot;PT Bold Heading&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>تحضير جديد</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="CBoxAttendence">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>191</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+font: 8pt &quot;Simple Bold Jut Out&quot;;
+color:rgb(0, 0, 0)
+
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>حضور</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>انصراف</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>بداية اضافي</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>نهاية اضافي</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>مستاذن</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>غياب</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>200</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>نوع الحركة</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>260</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>التاريخ</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEditAttendence">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>260</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 63 8pt &quot;Yu Gothic UI Semibold&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancelAddingAttendence">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>410</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(194, 64, 0);
+color:rgb(255, 255, 255);
+font: 15pt &quot;PT Bold Heading&quot;;</string>
+   </property>
+   <property name="text">
+    <string>إلغــــــاء</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSaveAttendence">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>410</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(0, 170, 127);
+color:rgb(255, 255, 255);
+font: 15pt &quot;PT Bold Heading&quot;;</string>
+   </property>
+   <property name="text">
+    <string>حفـــــظ</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtNameAttendence">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>90</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtNmberAttendence">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtNmberDAttendence">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>330</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtNameAttendence</tabstop>
+  <tabstop>txtNmberAttendence</tabstop>
+  <tabstop>CBoxAttendence</tabstop>
+  <tabstop>dateEditAttendence</tabstop>
+  <tabstop>txtNmberDAttendence</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>btnCancelAddingAttendence</tabstop>
+  <tabstop>btnSaveAttendence</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

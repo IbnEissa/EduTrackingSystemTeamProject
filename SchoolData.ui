@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog</class>
+ <widget class="QDialog" name="dialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>731</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>التهيئة</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/kisspng-computer-icons-businessperson-clip-art-3d-character-icon-vector-material-5aaef05a746085.5997945215214142344767.jpg</normaloff>icons/kisspng-computer-icons-businessperson-clip-art-3d-character-icon-vector-material-5aaef05a746085.5997945215214142344767.jpg</iconset>
+  </property>
+  <property name="whatsThis">
+   <string/>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="sizeConstraint">
+    <enum>QLayout::SetDefaultConstraint</enum>
+   </property>
+   <item>
+    <widget class="QPushButton" name="labAddSchool">
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(223, 221, 220);
+color:rgb(0, 0, 0);
+
+font: 18pt &quot;Mohammad Annoktah&quot;;</string>
+     </property>
+     <property name="text">
+      <string>البيانات الاساسية للمدرسة</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Mohammad Annoktah&quot;;</string>
+           </property>
+           <property name="text">
+            <string>المسنوى الاكاديمي</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboAcademicLevel">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	
+	border: 1px solid #5b586e;
+
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>ثانوي</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>إعدادي</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>إبتدائي</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>أساسي</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>شامل</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Mohammad Annoktah&quot;;</string>
+           </property>
+           <property name="text">
+            <string>القرية او العزلة</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="txtVillage">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTextEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhPreferNumbers</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Mohammad Annoktah&quot;;</string>
+           </property>
+           <property name="text">
+            <string>نوع الطلاب</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboGenderType">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	
+	border: 1px solid #5b586e;
+
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>بنين</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>بنات</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>مختلط</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Mohammad Annoktah&quot;;</string>
+           </property>
+           <property name="text">
+            <string>اسم المدرسة :  </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="txtSchoolName">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTextEdit {
+    background-color:rgb(255, 255, 255);
+    font: 75 8pt &quot;Motken K Sina&quot;;
+    color:rgb(0, 0, 0);
+    border-radius:10px;
+	padding: 2px 0;
+	border: 1px solid #5b586e;
+
+}</string>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhDigitsOnly|Qt::ImhMultiLine|Qt::ImhPreferNumbers</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Mohammad Annoktah&quot;;</string>
+           </property>
+           <property name="text">
+            <string>المحافظة : </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboCity">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	
+	border: 1px solid #5b586e;
+
+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Mohammad Annoktah&quot;;</string>
+           </property>
+           <property name="text">
+            <string>المديرية : </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="combDirectorates">
+           <property name="maximumSize">
+            <size>
+             <width>255</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+font: 10pt &quot;Motken K Sina&quot;;
+    border-radius:10px;
+	
+	border: 1px solid #5b586e;
+
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSaveSchool">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(4, 0, 62);
+color:rgb(255, 255, 255);
+font: 15pt &quot;Mohammad Annoktah&quot;;</string>
+       </property>
+       <property name="text">
+        <string>التالي</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/arrowLeft.png</normaloff>icons/arrowLeft.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnUpdateSchool">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(4, 0, 62);
+color:rgb(255, 255, 255);
+font: 15pt &quot;Mohammad Annoktah&quot;;</string>
+       </property>
+       <property name="text">
+        <string>حفظ</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnCancelSchool">
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(4, 0, 62);
+color:rgb(255, 255, 255);
+font: 15pt &quot;Mohammad Annoktah&quot;;</string>
+       </property>
+       <property name="text">
+        <string>إلغاء</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>txtSchoolName</tabstop>
+  <tabstop>txtVillage</tabstop>
+  <tabstop>comboAcademicLevel</tabstop>
+  <tabstop>comboGenderType</tabstop>
+  <tabstop>labAddSchool</tabstop>
+  <tabstop>comboCity</tabstop>
+  <tabstop>combDirectorates</tabstop>
+  <tabstop>btnSaveSchool</tabstop>
+  <tabstop>btnUpdateSchool</tabstop>
+  <tabstop>btnCancelSchool</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

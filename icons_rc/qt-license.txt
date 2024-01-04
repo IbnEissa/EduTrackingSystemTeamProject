@@ -1,0 +1,10 @@
+#  Qt license file
+CustomerID="200289"
+LicenseID="11039666"
+Licensee="mohammed essa"
+Products="Qt Design Studio Enterprise Evaluation License"
+ExpiryDate="2023-08-10"
+# Qt 4.x and Qt 5.0
+LicenseKeyExt="YGKXWU-XTL-R4M-2CX-EDD4H-MCVV7-67E0"
+# Qt 5.1 ->
+Qt5LicenseKey="YGKQWU-XQP-R4M-SCX-EDD4H-MCVV7-35B2"

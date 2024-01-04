@@ -1,0 +1,2 @@
+1- pip freeze > packages.txt    to add the packages in your application into the text file packages.txt 
+2-  pip install -r packages.txt   to install the packages in the file packages.txt into your application 

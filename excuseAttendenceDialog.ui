@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>449</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="btnCancelAddingExecution">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>400</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(194, 64, 0);
+color:rgb(255, 255, 255);
+font: 15pt &quot;PT Bold Heading&quot;;</string>
+   </property>
+   <property name="text">
+    <string>إلغــــــاء</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="labAddStudent">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>541</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(223, 221, 220);
+color:rgb(0, 0, 0);
+
+font: 18pt &quot;Mohammad Annoktah&quot;;</string>
+   </property>
+   <property name="text">
+    <string>تسجيل غياب بعذر</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>260</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>الملاحظة /سبب الغياب :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSaveExecution">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>400</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(0, 170, 127);
+color:rgb(255, 255, 255);
+font: 15pt &quot;PT Bold Heading&quot;;</string>
+   </property>
+   <property name="text">
+    <string>حفـــــظ</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtExecutionReason">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>421</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>SizeVerCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>331</x>
+     <y>190</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>تاريخ الغياب : </string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateOfAbsent">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>220</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;PT Bold Heading&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioAllEmps">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>70</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>كل الموظفين</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioSingleEmp">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>70</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>موظف واحد</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>110</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;PT Bold Heading&quot;;
+color:rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>الاسم :</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="combTeachersNames">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>140</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(25, 21, 59);
+color:rgb(255, 255, 255);
+font: 12pt &quot;PT Bold Heading&quot;;</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtExecutionReason</tabstop>
+  <tabstop>labAddStudent</tabstop>
+  <tabstop>btnSaveExecution</tabstop>
+  <tabstop>btnCancelAddingExecution</tabstop>
+  <tabstop>combTeachersNames</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
