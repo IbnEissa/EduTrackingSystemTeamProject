@@ -22,7 +22,7 @@ class FingerPrintData(BaseModel):
 
     def get_teacher_fingers(self, teacer_id):
         try:
-            finger_obj = FingerPrintData.get(FingerPrintData.teacher_id == teacer_id)
+            finger_obj = FingerPrintData.select().where(FingerPrintData.teacher_id == teacer_id)
             if finger_obj:
                 return True
             else:

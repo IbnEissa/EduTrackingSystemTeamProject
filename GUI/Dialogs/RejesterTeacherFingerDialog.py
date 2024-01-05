@@ -179,61 +179,27 @@ class RejesterTeacherFingerDialog(QDialog):
         self.selected_finger = None
         # self.update_ui()
 
-    def get_templates(self):
-        try:
-            conn = self.zk.connect()
-            template = conn.get_user_template(uid=32, user_id=32, temp_id=6)
-            print("Size     : %s" % template.size)
-            print("UID      : %s" % template.uid)
-            print("FID      : %s" % template.fid)
-            print("Valid    : %s" % template.valid)
-            print("Template : %s" % template.json_pack())
-            print("Mark     : %s" % template.mark)
-        except Exception as e:
-            print("Process terminate : {}".format(e))
-        finally:
-            if self.conn:
-                self.conn.disconnect()
+    # def get_templates(self):
+    #     try:
+    #         conn = self.zk.connect()
+    #         template = conn.get_user_template(uid=32, user_id=32, temp_id=6)
+    #         print("Size     : %s" % template.size)
+    #         print("UID      : %s" % template.uid)
+    #         print("FID      : %s" % template.fid)
+    #         print("Valid    : %s" % template.valid)
+    #         print("Template : %s" % template.json_pack())
+    #         print("Mark     : %s" % template.mark)
+    #     except Exception as e:
+    #         print("Process terminate : {}".format(e))
+    #     finally:
+    #         if self.conn:
+    #             self.conn.disconnect()
 
     def show_success_message(self, message):
         QMessageBox.information(self, "Success", message)
 
     def show_error_message(self, message):
         QMessageBox.critical(self, "Error", message)
-
-    # def start_enrollment(self):
-    #     if self.selected_user and self.selected_finger:
-    #         try:
-    #             conn = self.zk.connect()
-    #             if conn:
-    #                 conn.verify_user()
-    #                 result = conn.enroll_user(uid=self.selected_user, user_id=str(self.selected_user),
-    #                                           temp_id=self.selected_finger)
-    #                 if result:
-    #                     QMessageBox.information(self, "Success", "User enrolled successfully.")
-    #                 else:
-    #                     QMessageBox.critical(self, "Error", "Failed to enroll user.")
-    #         except Exception as e:
-    #             QMessageBox.critical(self, "Error", str(e))
-    #         finally:
-    #             if self.conn:
-    #                 self.conn.disconnect()
-    #     else:
-    #         QMessageBox.warning(self, "Warning", "Please select a user and a finger.")
-
-    # def save_user_templates_data(self):
-    #     selected_id = self.comboTeacherName.itemData(self.comboTeacherName.currentIndex(), Qt.UserRole)
-    #     zk = ZK('192.168.1.201', port=4370, timeout=5)
-    #     conn = zk.connect()
-    #     if conn:
-    #         users = conn.get_users()
-    #         for user in users:
-    #             if user.uid == selected_id:
-    #                 result = conn.save_user_template(user, )
-    #         if result:
-    #             QMessageBox.information(self, "تم", "تم حذف المستخدم بنجاح")
-    #         else:
-    #             QMessageBox.information(self, "خطأ", "فشل في حذف المستخدم")
 
     def on_finger_checkbox_state_changed(self, state):
         checked_box = self.sender()

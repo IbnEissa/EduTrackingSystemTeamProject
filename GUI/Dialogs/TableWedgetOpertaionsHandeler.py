@@ -340,7 +340,7 @@ class DeleteUpdateButtonStudentsWidget(QWidget):
         self.update_button = QPushButton("تفاصيل")
         self.delete_button.setFixedSize(110, 40)
         self.update_button.setStyleSheet(
-            "QPushButton {  background-color:none;color:rgb(255, 255, 255);font: 75 12pt 'Motken K Sina'; border-radius: 10%; } QPushButton:hover{ background-color:none; color:rgb(255, 255, 255); font: 75 10pt 'Motken K Sina'; }")
+            "QPushButton {  background-color:none;color:black;font: 75 12pt 'Motken K Sina'; border-radius: 10%; } QPushButton:hover{ background-color:none; color:rgb(255, 255, 255); font: 75 10pt 'Motken K Sina'; }")
         self.delete_button.setStyleSheet(
             "QPushButton { background-color: none; color:red;font: 75 12pt 'Motken K Sina'; border-radius: 10%; } QPushButton:hover{ background-color:none; color:rgb(255, 255, 255); font: 75 10pt 'Motken K Sina'; }")
         self.update_button.setFixedSize(110, 40)
@@ -970,6 +970,7 @@ class chickedButton(QWidget):
         self.trueButton.setIcon(QIcon("icons_rc/checked.png"))
         self.trueButton.setCursor(QCursor(Qt.PointingHandCursor))
         self.trueButton.setToolButtonStyle(Qt.ToolButtonIconOnly)
+        self.trueButton.setStyleSheet("background-color: none;")
         icon_size = QSize(25, 25)  # Set the desired size of the icon
         self.trueButton.setIconSize(icon_size)
         self.trueButton.setFixedSize(160, 147)
@@ -986,6 +987,7 @@ class unchickedButton(QWidget):
         self.falseButton.setCursor(QCursor(Qt.PointingHandCursor))
         self.falseButton.setIcon(QIcon("icons_rc/multiply.png"))
         self.falseButton.setToolButtonStyle(Qt.ToolButtonIconOnly)
+        self.falseButton.setStyleSheet("background-color: none;")
         icon_size = QSize(25, 25)  # Set the desired size of the icon
         self.falseButton.setIconSize(icon_size)
         self.falseButton.setFixedSize(160, 147)
@@ -1004,7 +1006,7 @@ class DeleteUpdateButtonTeachersWidget(QWidget):
         self.update_button = QPushButton("تفاصيل")
         self.delete_button.setFixedSize(110, 40)
         self.update_button.setStyleSheet(
-            "QPushButton {  background-color:none;color:rgb(255, 255, 255);font: 75 12pt 'Motken K Sina'; border-radius: 10%; } QPushButton:hover{ background-color:none; color:rgb(255, 255, 255); font: 75 10pt 'Motken K Sina'; }")
+            "QPushButton {  background-color:none;color:black;font: 75 12pt 'Motken K Sina'; border-radius: 10%; } QPushButton:hover{ background-color:none; color:rgb(255, 255, 255); font: 75 10pt 'Motken K Sina'; }")
         self.delete_button.setStyleSheet(
             "QPushButton { background-color: none; color:red;font: 75 12pt 'Motken K Sina'; border-radius: 10%; } QPushButton:hover{ background-color:none; color:rgb(255, 255, 255); font: 75 10pt 'Motken K Sina'; }")
         self.update_button.setFixedSize(110, 40)
