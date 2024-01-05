@@ -971,7 +971,7 @@ class chickedButton(QWidget):
         self.trueButton.setCursor(QCursor(Qt.PointingHandCursor))
         self.trueButton.setToolButtonStyle(Qt.ToolButtonIconOnly)
         self.trueButton.setStyleSheet("background-color: none;")
-        icon_size = QSize(25, 25)  # Set the desired size of the icon
+        icon_size = QSize(25, 25)
         self.trueButton.setIconSize(icon_size)
         self.trueButton.setFixedSize(160, 147)
         self.layout.addWidget(self.trueButton)
